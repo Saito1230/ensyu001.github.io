@@ -1,7 +1,8 @@
-const log_str_1 = (str) => consoleLog(str);
-const log_str_2 = (str_1, str_2 = "Default Str") => {
-  consoleLog(`引数1: ${str_1}`);
-  consoleLog(`引数2: ${str_2}`);
+const calc_1 = () => consoleLog(2021*1010);
+const calc_2 = (a, b) => consoleLog(a*b);
+const calc_3 = (a, b) =>  {
+  a = ((a*b) / 10) % 10
+  consoleLog(a)
 }
 
 const consoleLog = (str) => console.log(str);
