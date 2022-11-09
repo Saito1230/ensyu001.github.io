@@ -1,0 +1,11 @@
+.tweet{
+    height: 100px;
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.tweet_icon{
+    height: 100px;
+    float: left;
+    margin-right: 70px;
+}
