@@ -12,6 +12,11 @@ const showTweet = (name="all") => {
   $(".main>").remove();
   for(let i = 0; i < tweets.length; i++){
     if(tweets[i].name !== name && name !== "all") continue;
-    $(".main").append(`<div class='tweet'><img src=\"${tweets[i].avatar}\" class=\"tweet_icon\" /><p><b>${tweets[i].name}</b></p><p><b>${tweets[i].message}</b></p><p style="font-size: 5px;"><b>${tweets[i].tweetedAt}</b></p></div>`)
+    $(".main").append(`
+        <div class='tweet'>
+          <img src=\"${tweets[i].avatar}\" class=\"tweet_icon\" />
+          <p class="t_name"><b>${tweets[i].name}</b>  <small>${tweets[i].tweetedAt}</small></>
+          <p class="t_msg">${tweets[i].message}</p>
+        </div>`)
   }
 }
