@@ -6,6 +6,11 @@
 
 .tweet_icon{
     height: 100px;
+    width: 90px;
     float: left;
     margin-right: 70px;
+}
+
+.btn {
+    margin: 3px;
 }
